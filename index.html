@@ -6,28 +6,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="header">
-    <img src="photo_2022-08-24_12-49-27.jpg" class="avatar" alt="Здесь был красивый я">
+<div class="container">
+    <div class="header">
+        <img src="photo_2022-08-24_12-49-27.jpg" class="avatar" alt="Здесь был красивый я">
+        <div class="header-text">
+            <h1>Роман Сухов</h1>
+            <p>Я в прошлом продавец автомобилей, который решил изменить свою жизнь и стать
+                разработчиком</p>
+            <p>Я увлекаюсь автомобилями и инвестициями, люблю путешествовать и мечтаю объездить весь мир</p>
 
-    <h1>Роман Сухов</h1>
-    <p>Я в прошлом продавец автомобилей, который решил изменить свою жизнь и стать
-        разработчиком</p>
-    <p>Я увлекаюсь автомобилями и инвестициями, люблю путешествовать и мечтаю объездить весь мир</p>
-
-    <h4>Мои контакты:</h4>
-    <a href="https://vk.com/sukhovofficial" target="_blank"> VK</a>
-    |
-    <a href="https://t.me/sukhovofficial" target="_blank">Telegram</a>
+            <h4>Мои контакты:</h4>
+            <a href="https://vk.com/sukhovofficial" target="_blank"> VK</a>
+            |
+            <a href="https://t.me/sukhovofficial" target="_blank">Telegram</a>
+        </div>
+    </div>
 </div>
+
 <div class="content">
-    <div class="card">
+    <div class="card bg-blue-gray">
         <h2>Опыт работы:</h2>
-        <table class="table" align="center" border="1">
+        <table class="table" align="center">
             <tr>
-                <th>Компания</th>
-                <th>Должность</th>
-                <th>Город</th>
-                <th>Годы работы</th>
+                <td>Hyundai Motor Company</td>
+                <td>Genesis Frontend Developer</td>
+                <td>Seoul</td>
+                <td>Future...</td>
             </tr>
             <tr>
                 <td>AAA-motors</td>
@@ -49,7 +53,7 @@
             </tr>
         </table>
     </div>
-    <div class="card">
+    <div class="card bg-milk-coffee">
         <h2>Мои хобби:</h2>
         <ol class="list">
             <li>Путешествия на внедорожниках</li>
@@ -58,27 +62,39 @@
             <li>Вылазки на воду на сапах или лодке</li>
         </ol>
     </div>
-    <div class="card">
+    <div class="card bg-brown">
         <h2>Сделаем ссылку на другую страницу шаблона</h2>
         <a href="future.html">Здесь будет ссылка</a>
     </div>
-    <div class="card">
-        <h2>Связаться со мной</h2>
-        <form>
-            <label for="name">Ваше имя:</label>
-            <input type="text" id="name" placeholder="Введите имя здесь...">
-            <br>
-            <label for="email">Ваш email:</label>
-            <input type="email" id="email" placeholder="Введите email здесь...">
-            <br>
-            <label for="birthDate">Выберете дату вашего рождения:</label>
-            <input type="date" id="birthDate">
-            <br>
-            <label for="text">Ваше сообщение:</label>
-            <br>
-            <textarea id="text" placeholder="Можете здесь написать мне что-то приятное"></textarea>
-            <input type="submit" value="Тыкни сюда">
-        </form>
+    <div class="contact">
+
+        <div class="card">
+            <h2>Связаться со мной</h2>
+            <form>
+                <div class="row">
+                    <div class="form-group">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" placeholder="Введите имя здесь...">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Ваш email:</label>
+                        <input type="email" id="email" placeholder="Введите email здесь...">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="birthDate">Выберете дату вашего рождения:</label>
+                    <input type="date" id="birthDate">
+                </div>
+                <div class="form-group">
+                    <label for="text">Ваше сообщение:</label>
+                    <textarea id="text" placeholder="Можете здесь написать мне что-то приятное"></textarea>
+                </div>
+                <input type="submit" class="btn" value="Тыкни сюда">
+            </form>
+        </div>
+    </div>
+    <div class="positon">
+        <div class="box"></div>
     </div>
 </div>
 </body>
